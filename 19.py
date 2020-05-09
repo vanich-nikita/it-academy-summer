@@ -19,3 +19,5 @@ for ingredient in tree.getiterator('tr'):
     amt, unit, item = ingredient
     if item.tag == "td" and item.text not in pantry:
         print ("%s: %s %s" % (item.text, amt.text, unit.text))
+
+#
