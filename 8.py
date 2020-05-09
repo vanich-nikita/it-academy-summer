@@ -1,4 +1,4 @@
-# This program adds up integers that have been passed as arguments in the command line
+# This program adds up integers that have been passed as arguments in the cli
 import sys
 try:
     total = sum(int(arg) for arg in sys.argv[1:])
