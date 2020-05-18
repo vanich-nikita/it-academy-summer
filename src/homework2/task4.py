@@ -16,9 +16,9 @@ def count_letters(str_):
     up_number = 0
     for i in str_:
         if i.islower():
-            low_number+=1
+            low_number += 1
         if i.isupper():
-            up_number+=1
+            up_number += 1
     return (low_number, up_number)  # write return value here
 
 

@@ -16,8 +16,8 @@ def sub_string(str_):
     new_string = ''
     for i in str_:
         if i not in new_string:
-            if i!=' ':
-                new_string+=i
+            if i != ' ':
+                new_string += i
     return new_string  # write return value here
 
 

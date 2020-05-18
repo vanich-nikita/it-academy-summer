@@ -20,7 +20,7 @@ def palindrom(n):
         rev = (10 * rev) + n % 10
         n //= 10
     if compare == rev:
-        flag =True
+        flag = True
         print("The number entered is a palindrome")
     else:
         flag = False
