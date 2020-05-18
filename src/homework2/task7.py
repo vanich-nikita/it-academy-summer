@@ -14,7 +14,7 @@ XO("zzoo") => false
 
 s = input("Input string:")
 s = s.lower()
-o ,x = 0, 0
+o, x = 0, 0
 flag = False
 for i in s:
     if i == 'o':
@@ -27,8 +27,10 @@ print(flag)
 
 
 '''Isograms.
-An isogram is a word that has no repeating letters, consecutive or non-consecutive.
-Implement a function that determines whether a string that contains only letters is an isogram.
+An isogram is a word that has no repeating letters, consecutive or 
+non-consecutive.
+Implement a function that determines whether a string 
+that contains only letters is an isogram.
 Assume the empty string is an isogram. Ignore letter case.
 
 is_isogram("Dermatoglyphics" ) == true
@@ -46,14 +48,16 @@ for i in string:
 print(flag)
 
 '''Mumbling.
-This time no story, no theory. The examples below show you how to write function accum:
+This time no story, no theory. The examples below show you 
+how to write function accum:
 
 Examples:
 
 accum("abcd") -> "A-Bb-Ccc-Dddd"
 accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 accum("cwAt") -> "C-Ww-Aaa-Tttt"
-The parameter of accum is a string which includes only letters from a..z and A..Z.
+The parameter of accum is a string which includes 
+only letters from a..z and A..Z.
 '''
 string = input("Input string: ")
 new_string = ''
