@@ -25,8 +25,8 @@ def total_sum(m, n, s):
     price = (m * 100 + n) * s  # in kopecks
     rubles = price // 100
     kopecks = price % 100
-    return print("Total price:", rubles, "rubles", kopecks, "kopecks")
-    # return rubles,kopecks
+    # return print("Total price:", rubles, "rubles", kopecks, "kopecks")
+    return rubles,kopecks
 
 
 if __name__ == '__main__':
