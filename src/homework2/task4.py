@@ -14,10 +14,15 @@ def count_letters(str_):
     # write your code here
     low_number = 0
     up_number = 0
+    for i in str_:
+        if i.islower():
+            low_number+=1
+        if i.isupper():
+            up_number+=1
     return (low_number, up_number)  # write return value here
 
 
 if __name__ == '__main__':
     # здесь можно сделать ввод из консоли и проверить работу функции
-    str_ = ''
+    str_ = input("Input your string: ")
     print(count_letters(str_))

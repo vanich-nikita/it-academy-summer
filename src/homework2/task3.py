@@ -12,12 +12,16 @@ def sub_string(str_):
     :param str_: входная строка
     :return: строка. Получившееся выражение
     """
-
     # write your code here
-    return ''  # write return value here
+    new_string = ''
+    for i in str_:
+        if i not in new_string:
+            if i!=' ':
+                new_string+=i
+    return new_string  # write return value here
 
 
 if __name__ == '__main__':
     # здесь можно сделать ввод из консоли и проверить работу функции
-    str_ = ''
+    str_ = input("Input your string: ")
     print(sub_string(str_))

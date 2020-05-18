@@ -13,10 +13,22 @@ def palindrom(n):
     """
 
     # write your code here
-    return ''  # write return value here
+    rev = 0
+    compare = n
+    flag = False
+    while n > 0:
+        rev = (10 * rev) + n % 10
+        n //= 10
+    if compare == rev:
+        flag =True
+        print("The number entered is a palindrome")
+    else:
+        flag = False
+        print("The entered number is NOT a palindrome")
+    return flag  # write return value here
 
 
 if __name__ == '__main__':
     # здесь можно сделать ввод из консоли и проверить работу функции
-    n = 0
+    n = int(input("Enter your number: "))
     print(palindrom(n))
