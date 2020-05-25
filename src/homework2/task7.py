@@ -139,7 +139,7 @@ Example
   delete_nth ([20,37,20,21],1) # return [20,37,21]
 '''
 
-initial_list = [20,37,20,21]
+initial_list = [20, 37, 20, 21]
 secondary_list = []
 
 max_e = 1
@@ -149,9 +149,6 @@ for i in initial_list:
     else:
         continue
 print(secondary_list)
-
-
-
 
 '''
 Build Tower
@@ -190,7 +187,7 @@ for x in range(1, 2 * n_floor, 2):
 print(result)
 '''
 
-n_floor=int(input("Enter number of floors: "))
+n_floor = int(input("Enter number of floors: "))
 result = []
 
 for i in range(1, n_floor + 1):
@@ -199,10 +196,9 @@ for i in range(1, n_floor + 1):
     result.append(space + stars + space)
 print(result)
 
-
-
 '''
-Complete the solution so that the function will break up camel casing, using a space between words.
+Complete the solution so that the function will break up camel casing,
+using a space between words.
 
 Example
 solution("camelCasing")  ==  "camel Casing"
@@ -217,12 +213,11 @@ for i in string:
         new_string += " " + i
 print(new_string)
 
-
-
 '''
-The goal of this exercise is to convert a string to a new string where each character
-in the new string is "(" if that character appears only once in the original string, or ")"
- f that character appears more than once in the original string.
+The goal of this exercise is to convert a string to a new string where
+each character in the new string is "(" if that character appears only
+once in the original string, or ")" if that character appears more than
+once in the original string.
 Ignore capitalization when determining if a character is a duplicate.
 
 Examples
@@ -233,7 +228,8 @@ Examples
 Notes
 
 Assertion messages may be unclear about what they display in some languages.
-If you read "...It Should encode XXX", the "XXX" is the expected result, not the input!
+If you read "...It Should encode XXX", the "XXX" is the expected result,
+not the input!
 '''
 
 string = input("Input string: ")
@@ -245,10 +241,6 @@ for i in string:
     else:
         final_string += '('
 print(final_string)
-
-
-
-
 
 '''
 For building the encrypted string:
@@ -313,8 +305,8 @@ elif n <= 0:
     print(text)
 else:
     while n != 0:
-        first_half = text[:int(len(text)/2)]
-        second_half = text[int(len(text)/2):]
+        first_half = text[:int(len(text) / 2)]
+        second_half = text[int(len(text) / 2):]
         counter3 = 0
 
         while counter3 < len(second_half):
