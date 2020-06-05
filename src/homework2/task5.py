@@ -10,7 +10,7 @@ def fibonacci(n):
     :return: Число. n-ое число Фибоначчи
     """
     # write your code here
-    n1 = 0
+    n1 = 1
     first = n1
     n2 = 1
     # Первые 2 числа Фибоначчи - могут быть 0,1 или 1,1

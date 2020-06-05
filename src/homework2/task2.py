@@ -16,7 +16,7 @@ def longest_word(str_):
     list = str_.split()
     new_list = []
     for i in list:
-        new_list.append(i.strip(',.:!@?'))
+        new_list.append(i.strip('!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~'))
     longest_word = new_list[0]
     for i in new_list:
         if len(i) > len(longest_word):
