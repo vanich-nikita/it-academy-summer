@@ -1,5 +1,5 @@
 """
-1.	 Используйте генератор списков чтобы получить следующий:
+1.	Используйте генератор списков чтобы получить следующий:
 ['ab', 'ac', 'ad', 'bb', 'bc', 'bd'].
 2.	Используйте на предыдущий список slice чтобы получить следующий:
 ['ab', 'ad', 'bc'].
@@ -9,31 +9,18 @@
 5.	Скопируйте список и добавьте в него элемент '2a' так,
 чтобы в исходном списке этого элемента не было.
 """
-lst1 = [x + y for x in 'ab' for y in 'bcd']   #1.
+# 1.
+lst1 = [x + y for x in 'ab' for y in 'bcd']
 print(lst1)
-
-print(lst1[::2])  #2.
-
-lst2 = [str(x) + 'a' for x in range(1, 5)]   #3.
+# 2.
+print(lst1[::2])
+# 3.
+lst2 = [str(x) + 'a' for x in range(1, 5)]
 print(lst2)
-
-print(lst2.pop(1))          #4.
+# 4.
+print(lst2.pop(1))
 print(lst2)
-#print(lst2.remove('2a'), lst2)
-#del lst2[1]; print(lst2)
-#print(lst2)
-
-lst3 = lst2[:]       #5.
+# 5.
+lst3 = lst2[:]
 lst3.append('2a')
 print("List2: {} List3: {}".format(lst2, lst3))
-
-
-
-
-
-
-
-
-
-
-
