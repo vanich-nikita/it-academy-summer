@@ -22,4 +22,3 @@ print(len(tpl3))
 for i in tpl3:
     for n in i:
         print(n, end=' ')
-        
