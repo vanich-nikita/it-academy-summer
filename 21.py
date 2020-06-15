@@ -1,3 +1,5 @@
+#random
+
 import random
 
 guesses_made = 0

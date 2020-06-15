@@ -1,3 +1,5 @@
+#xml
+
 import xml.etree.ElementTree as etree
 
 dinner_recipe = '''<html><body><table>
