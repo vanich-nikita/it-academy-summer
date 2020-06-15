@@ -1,4 +1,4 @@
-#itertools.groupby
+# itertools.groupby
 
 from itertools import groupby
 lines = '''

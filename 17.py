@@ -1,4 +1,4 @@
-#under_attack
+# under_attack
 
 BOARD_SIZE = 8
 

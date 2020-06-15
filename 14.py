@@ -1,4 +1,4 @@
-#median
+# median
 
 def median(pool):
     """Statistical median to demonstrate doctest.

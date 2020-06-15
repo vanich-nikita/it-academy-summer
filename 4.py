@@ -1,4 +1,4 @@
-#parents, babies
+# parents, babies
 
 parents, babies = (1, 1)
 while babies < 100:

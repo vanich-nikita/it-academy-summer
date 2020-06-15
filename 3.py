@@ -1,4 +1,4 @@
-#friends
+# friends
 
 friends = ['john', 'pat', 'gary', 'michael']
 for i, name in enumerate(friends):

@@ -1,4 +1,4 @@
-#REFRAIN
+# REFRAIN
 
 REFRAIN = '''
 %d bottles of beer on the wall,

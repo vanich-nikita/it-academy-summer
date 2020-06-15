@@ -1,4 +1,4 @@
-#add_queen
+# add_queen
 
 BOARD_SIZE = 8
 
