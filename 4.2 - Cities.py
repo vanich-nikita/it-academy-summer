@@ -26,6 +26,7 @@ Russia
 Russia
 """
 
+
 def input_data():
     # dictionary for data storage
     dct = {}
@@ -40,6 +41,7 @@ def input_data():
         # to prevent endless loop
         N -= 1
     return dct
+
 
 def output_data(dct):
     # list for storing found countries
@@ -67,6 +69,7 @@ def output_data(dct):
     # The final output of the cities
     for i in country:
         print(i)
+
 
 x = input_data()
 # for test

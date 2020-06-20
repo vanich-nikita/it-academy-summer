@@ -4,6 +4,7 @@
 (мы не знаем функции и рекурсию).
 """
 
+
 def gcf(a, b):
     while a != b:
         if a > b:
@@ -11,5 +12,6 @@ def gcf(a, b):
         else:
             b = b - a
     print(a)
+
 
 gcf(99, 66)

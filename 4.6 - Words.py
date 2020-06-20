@@ -21,4 +21,3 @@ print(len(set(final_str)))
 str_.close()
 # for test
 # print(final_str)
-

@@ -27,6 +27,7 @@ French
 на следующих строках - список таких языков.
 """
 
+
 def input_data():
     # dictionary for data storage
     dct = {}
@@ -40,9 +41,9 @@ def input_data():
         # language storage list
         lang = []
         while M > 0:
-            l = input("Input languages: ")
+            lng = input("Input languages: ")
             # adding data to the dictionary
-            lang.append(l)
+            lang.append(lng)
             # dictionary formation
             dct[n] = lang
             # to prevent endless loop
@@ -52,6 +53,7 @@ def input_data():
         # key increase
         n += 1
     return dct
+
 
 def output_data(dct):
     sets = []
@@ -77,12 +79,13 @@ def output_data(dct):
     # comment output
     # print("The number of languages that at least one student knows:\
 # at least one of: {0}"\
-   # .format(len(at_least_one_student_knows)))
+    # .format(len(at_least_one_student_knows)))
     print(len(at_least_one_student_knows))
     # comment output
     # print("The languages that at least one student knows: ",\
     #      *at_least_one_student_knows, sep='\n')
     print(*at_least_one_student_knows, sep='\n')
+
 
 x = input_data()
 # for test
