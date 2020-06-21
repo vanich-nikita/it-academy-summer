@@ -13,6 +13,8 @@ def longest_word(str_):
         в случае если
     """
     # write your code here
+    if str_ == '':
+        return ''
     list = str_.split()
     new_list = []
     for i in list:
