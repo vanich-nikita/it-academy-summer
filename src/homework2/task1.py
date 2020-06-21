@@ -17,13 +17,12 @@ def total_sum(m, n, s):
 
     # write your code here
     m, n, s = int(m), int(n), int(s)
-    # price = (m * 100 + n) * s  # in kopecks
+    price = (m * 100 + n) * s  # in kopecks
     # rubles = price // 100
     # kopecks = price % 100
     # string = str(((m * 100 + n) * s) // 100)
     # + " rubles " + str(((m * 100 + n) * s) % 100) + " kopecks"
-    return str(((m * 100 + n) * s) // 100) + " rubles "\
-                    + str(((m * 100 + n) * s) % 100) + " kopecks"
+    return str(price // 100) + " rubles " + str(price % 100) + " kopecks"
     # return rubles, kopecks
 
 
