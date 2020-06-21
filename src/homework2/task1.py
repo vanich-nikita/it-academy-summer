@@ -23,7 +23,7 @@ def total_sum(m, n, s):
     # string = str(((m * 100 + n) * s) // 100)
     # + " rubles " + str(((m * 100 + n) * s) % 100) + " kopecks"
     return str(((m * 100 + n) * s) // 100) + " rubles "\
-+ str(((m * 100 + n) * s) % 100) + " kopecks"
+                    + str(((m * 100 + n) * s) % 100) + " kopecks"
     # return rubles, kopecks
 
 
