@@ -20,8 +20,10 @@ def total_sum(m, n, s):
     # price = (m * 100 + n) * s  # in kopecks
     # rubles = price // 100
     # kopecks = price % 100
-    # string = str(((m * 100 + n) * s) // 100) + " rubles " + str(((m * 100 + n) * s) % 100) + " kopecks"
-    return str(((m * 100 + n) * s) // 100) + " rubles " + str(((m * 100 + n) * s) % 100) + " kopecks"
+    # string = str(((m * 100 + n) * s) // 100)
+    # + " rubles " + str(((m * 100 + n) * s) % 100) + " kopecks"
+    return str(((m * 100 + n) * s) // 100) + " rubles " \
+           + str(((m * 100 + n) * s) % 100) + " kopecks"
     # return rubles, kopecks
 
 
