@@ -3,15 +3,15 @@
 за L товаров.
 """
 
-
 def total_sum(m, n, s):
 
     """Подсчет общей суммы покупок.
+
     :param m: рубли
     :param n: копейки
     :param s: количество товара
     :return: строка. общая цена в рублях и копейках. формат:
-    'x rubles y kopecks'
+        'x rubles y kopecks'
     """
 
     # write your code here
