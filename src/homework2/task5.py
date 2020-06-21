@@ -5,9 +5,11 @@
 
 def fibonacci(n):
     """Поиск числа фибоначчи.
+
     :param n: Номер числа Фибоначчи.
     :return: Число. n-ое число Фибоначчи
     """
+
     # write your code here
     n1 = 0
     first = n1
