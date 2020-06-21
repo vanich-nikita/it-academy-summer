@@ -16,13 +16,10 @@ s = input("Input string:")
 s = s.lower()
 o, x = 0, 0
 flag = False
-for i in s:
-    if i == 'o':
-        o += 1
-    if i == 'x':
-        x += 1
-    if o == x and x:
-        flag = True
+o = s.count('o')
+x = s.count('x')
+if o == x:
+    flag = True
 print(flag)
 
 
@@ -41,10 +38,17 @@ is_isogram("moOse" ) == false # -- ignore letter case
 string = input("Input string: ")
 flag = True
 string = string.lower()
-for i in string:
+string1 = string
+my_set = set(string1)
+if len(string) != len(my_set):
+    flag = False
+
+"""for i in string:
     if string.count(i) > 1:
         flag = False
         break
+"""
+
 print(flag)
 
 '''Mumbling.
