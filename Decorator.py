@@ -6,8 +6,8 @@
 
 def dec(sum):
     lst = []
-    def wrapper(*args, **kwargs):
 
+    def wrapper(*args, **kwargs):
         nonlocal lst
         res = sum(*args, **kwargs)
         lst.append(res)
