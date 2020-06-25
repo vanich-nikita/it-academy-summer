@@ -15,4 +15,4 @@ def sum(*b):
 
 
 if __name__ == '__main__':
-    gcf(99,66)
+    gcf(99, 66)
