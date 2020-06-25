@@ -5,20 +5,22 @@
 
 
 def near_pow2(n):
-  num = n
-  pow = 0
-  while n > 1:
-    n = n >> 1
-    pow += 1
+    num = n
+    pow = 0
+    while n > 1:
+        n = n >> 1
+        pow += 1
 
-  if abs(num - 2 ** pow) < abs(num - 2 ** (pow + 1)):
-    return 2 ** pow
-  else:
-    return 2 ** (pow + 1)
+    if abs(num - 2 ** pow) < abs(num - 2 ** (pow + 1)):
+        return 2 ** pow
+    else:
+        return 2 ** (pow + 1)
+
 
 # for test
 # def is_pow2(word):
 #   return word & (word - 1) == 0
+
 
 n = int(input("Enter number: "))
 x = near_pow2(n)

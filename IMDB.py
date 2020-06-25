@@ -23,7 +23,7 @@ try:
     for i in f:
         while counter1 < END_OF_OUR_ZONE_OF_INTEREST:
             a = str(f.readline())
-            top250 = open('top250.txt','a')
+            top250 = open('top250.txt', 'a')
             top250.write(a)
             top250.close()
             counter1 += 1
@@ -45,12 +45,12 @@ try:
     top250.close()
 
     os.remove('top250.txt')
-    os.rename('top250_movies_temp.txt','top250_1.txt')
+    os.rename('top250_movies_temp.txt', 'top250_1.txt')
 
     # further we form the dictionaries
     # initial dict
     counter3 = 1
-    dct ={}
+    dct = {}
     f = open('top250_1.txt', 'r')
     # list to store strings
     lst = []
@@ -86,7 +86,7 @@ try:
 
     top250_ready = open('top250_movies_ready.txt', 'a')
     for title in dct_names.values():
-        top250_ready.write(title +'\n')
+        top250_ready.write(title + '\n')
     top250_ready.close()
 
     # ratings
@@ -135,8 +135,8 @@ try:
         T = int(year) // 1000
         C = (int(year) % 1000) // 100
         D = ((int(year) % 1000) % 100) // 10
-        O = ((int(year) % 1000) % 100) % 10
-        letters = 'T' * T + 'C' * C + 'D' * D + 'O' * O + '\n'
+        Oo = ((int(year) % 1000) % 100) % 10
+        letters = 'T' * T + 'C' * C + 'D' * D + 'O' * Oo + '\n'
         years.write(letters)
     years.close()
 
@@ -146,6 +146,6 @@ try:
     os.rename('top250_movies_ready.txt', 'top250_movies.txt')
 
 except IOError:
-     print("An error occurred while opening the file!")
+    print("An error occurred while opening the file!")
 except ValueError:
-     print("Error!")
+    print("Error!")

@@ -4,6 +4,7 @@
 """
 
 
+
 def dec(sum):
     lst = []
     def wrapper(*args, **kwargs):

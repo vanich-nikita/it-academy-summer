@@ -55,12 +55,12 @@ def get_ranges(lst):
                     break
                 if str(next_elem) == lst[-1]:
                     str_ += str(elem) + ',' + str(next_elem)
-        left_border +=1
+        left_border += 1
     print(str_)
 
 
 get_ranges([0, 1, 2, 3, 4, 7, 8, 10])
-get_ranges([4,7,10])
+get_ranges([4, 7, 10])
 get_ranges([1, 4, 7, 10, 15])
 get_ranges([2, 3, 8, 9])
 get_ranges([0, 2, 3, 8, 9])

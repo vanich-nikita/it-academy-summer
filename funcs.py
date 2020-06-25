@@ -1,4 +1,4 @@
-def gcf(a = 33, b = 11):
+def gcf(a=33, b=11):
     while a != b:
         if a > b:
             a = a - b
@@ -15,6 +15,4 @@ def sum(*b):
 
 
 if __name__ == '__main__':
-    gcf(99, 66)
-
-
+    gcf(99,66)
