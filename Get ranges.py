@@ -34,7 +34,8 @@ def get_ranges(lst):
                     str_ += '-'
                 break
 
-            if next_elem - elem == 1 and next_elem == lst[-1] and str_[-1] == str(elem):
+            if next_elem - elem == 1 and next_elem == lst[-1] \
+                    and str_[-1] == str(elem):
                 str_ += '-' + str(next_elem)
                 break
 
