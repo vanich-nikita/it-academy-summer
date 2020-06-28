@@ -86,8 +86,8 @@ try:
 
     top250_ready = open('top250_movies_ready.txt', 'a')
     for number, title in dct_names.items():
-        top250_ready.write("{:>3}".format(str(number)) + ' '
-                           + title + '\n')
+        top250_ready.write("{:>3}".format(str(number)) +
+                           ' ' + title + '\n')
     top250_ready.close()
 
     # ratings
