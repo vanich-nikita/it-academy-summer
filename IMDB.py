@@ -77,16 +77,17 @@ try:
     # print(dct_names)
 
     for number, names in dct_names.items():
-        str = ''
+        str_ = ''
         for part in names:
-            str += part + ' '
-        dct_names[number] = str
+            str_ += part + ' '
+        dct_names[number] = str_
 
     # print(dct_names)
 
     top250_ready = open('top250_movies_ready.txt', 'a')
-    for title in dct_names.values():
-        top250_ready.write(title + '\n')
+    for number, title in dct_names.items():
+        top250_ready.write("{:>3}".format(str(number)) + ' '
+                           + title + '\n')
     top250_ready.close()
 
     # ratings
@@ -106,7 +107,8 @@ try:
     # histogram formation
     ratings = open('ratings.txt', 'a')
     for number, rating in dct_ratings.items():
-        stars = '*' * int(rating * 10) + '\n'
+        stars = "{:>3}".format(str(number)) + ' '\
+                + '*' * int(rating * 10) + '\n'
         # stars = str(str(number) + ' ' + '*' * (int(rating) * 10) + '\n')
         ratings.write(stars)
     ratings.close()
@@ -136,7 +138,8 @@ try:
         C = (int(year) % 1000) // 100
         D = ((int(year) % 1000) % 100) // 10
         Oo = ((int(year) % 1000) % 100) % 10
-        letters = 'T' * T + 'C' * C + 'D' * D + 'O' * Oo + '\n'
+        letters = "{:>3}".format(str(number)) + ' ' + 'T' * T + 'C' * C\
+                  + 'D' * D + 'O' * Oo + '\n'
         years.write(letters)
     years.close()
 
