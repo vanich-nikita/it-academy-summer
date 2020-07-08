@@ -36,7 +36,7 @@ n = int(input("#1. Введите ширину: "))
 m = int(input("Введите длину: "))
 k = int(input("Введите площаль куска: "))
 
-if ((not k%n) or (not k%n)) and k < n * m:
+if ((not k % n) or (not k % n)) and k < n * m:
     print('Результат: YES')
 else:
     print('Результат: NO')
