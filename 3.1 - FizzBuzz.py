@@ -5,11 +5,7 @@
 """
 
 for i in range(1, 101):
-    # для удобства вывода
-    if i == 52:
-        print()
-    # сначала проверяем составное условие
-    if not i % 3 and not i % 5:
+    if not i % 15:
         print("FizzBuzz", end=" ")
     elif not i % 3:
         print("Fizz", end=" ")

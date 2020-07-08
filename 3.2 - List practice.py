@@ -15,7 +15,7 @@ print(lst1)
 # 2.
 print(lst1[::2])
 # 3.
-lst2 = [str(x) + 'a' for x in range(1, 5)]
+lst2 = [x + '' + 'a' for x in '1234']
 print(lst2)
 # 4.
 print(lst2.pop(1))
