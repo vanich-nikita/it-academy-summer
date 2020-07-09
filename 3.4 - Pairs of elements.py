@@ -10,10 +10,20 @@
 # lst = [1, 1, 2, 3, 6, 7, 88, 88, 88, 88, 1]
 lst = [1, 1, 1, 1]
 
-# a = [int(s) for s in input().split()]
-ctr = 0
-for i in range(len(lst)):
-    for j in range(i + 1, len(lst)):
-        if lst[i] == lst[j]:
-            ctr += 1
-print(ctr)
+# lst = [int(s) for s in input().split()]
+# ctr = 0
+# for i in range(len(lst)):
+#     for j in range(i + 1, len(lst)):
+#         if lst[i] == lst[j]:
+#             ctr += 1
+# print(ctr)
+
+"""
+Первая единица образует пару с тремя другими единицами.
+Это подсчитывается через lst.count(x)-1. Количество пар находится
+для каждого элемента через for x in lst и складывается через sum().
+Сумма получается в два раза больше, т.к. каждая пара учитывается
+2 раза (например, первый элемент со вторым, а потом наоборот),
+поэтому добавлено деление на 2.
+"""
+print(sum(lst.count(x) - 1 for x in lst) // 2)
