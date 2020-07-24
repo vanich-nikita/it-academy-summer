@@ -9,26 +9,35 @@
 Известно, что:
 P(64,64) = 1263,
 P(12,345) = 1998 и
-P(32,1015) = 13826382602124302.
-Найдите P(64,1016).
+P(32,10**15) = 13826382602124302.
+Найдите P(64,10**16).
 """
 
 
 def multiplication_table(m, n):
-    if m > 0 and n > 0:
-        table = {}
-        for row in range(1, m + 1):
-            table[row] = [row * y for y in range(1, n + 1)]
-
     result = set()
+    try:
+        if m <= 0 or n <= 0:
+            raise ValueError("Input positive number!")
+        else:
+            # for "little" numbers
+            for row in range(1, m + 1):
+                value_of_row = (row * y for y in range(1, n + 1))
+                for element in value_of_row:
+                    result.add(element)
+            print(len(result))
+    except ValueError:
+            print("ValueError input correct data!")
+    except TypeError:
+            print("TypeError input correct data!")
+    return len(result)
 
-    for element in table.values():
-        result.update(set(element))
 
-    print(len(result))
-
-
-if __name__ == '__main__':
-    multiplication_table(3, 4)
-    multiplication_table(64, 64)
-    multiplication_table(12, 345)
+# if __name__ == '__main__':
+#     multiplication_table(-1, -1)
+#     multiplication_table('a', 'b')
+#     multiplication_table(1, 1)
+#     multiplication_table(3, 4)
+#     multiplication_table(64, 64)
+#     multiplication_table(12, 345)
+#     multiplication_table(64, 10**6)

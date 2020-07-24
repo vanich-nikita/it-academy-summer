@@ -37,8 +37,8 @@ if __name__ == '__main__':
         return a + b
 
 
-    fun(22,4)
-    fun(1,4)
-    fun(5,6)
+    fun(22, 4)
+    fun(1, 4)
+    fun(5, 6)
     fun()
     fun()
