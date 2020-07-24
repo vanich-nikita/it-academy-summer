@@ -34,11 +34,8 @@ def input_data():
     N = int(input("Input number of countries: "))
 
     while N > 0:
-        # entering data
         country, *cities = input("Enter country and cities names: ").split()
-        # entering data into a dictionary
         dct[country] = tuple(cities)
-        # to prevent endless loop
         N -= 1
     return dct
 
@@ -47,11 +44,11 @@ def output_data(dct):
     # list for storing found countries
     country = []
     # list for dictionary mirroring
-    s = []
+    mirror_list = []
     # the second mirror dict
-    for i in dct.keys():
-        s.append((dct[i], i))
-    tcd = dict(s)
+    for state in dct.keys():
+        mirror_list.append((dct[state], state))
+    tcd = dict(mirror_list)
 
     M = int(input("Input number of cities: "))
 
@@ -59,19 +56,15 @@ def output_data(dct):
         cities = input("Enter cities names: ")
         # search for the input city in a nested loop
         # and add it to the list
-        for i in tcd:
-            for j in i:
-                if cities == j:
-                    country.append(tcd[i])
-        # to prevent endless loop
+        for towns in tcd:
+            for town in towns:
+                if cities == town:
+                    country.append(tcd[towns])
         M -= 1
-    # print(country) # for test
     # The final output of the cities
-    for i in country:
-        print(i)
+    for state in country:
+        print(state)
 
 
-x = input_data()
-# for test
-# print(x)
-output_data(x)
+input_data = input_data()
+output_data(input_data)

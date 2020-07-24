@@ -32,7 +32,7 @@ def input_data():
     # dictionary for data storage
     dct = {}
     # for key of dictionary
-    n = 1
+    counter = 1
 
     N = int(input("Input number of students: "))
 
@@ -42,33 +42,26 @@ def input_data():
         lang = []
         while M > 0:
             lng = input("Input languages: ")
-            # adding data to the dictionary
             lang.append(lng)
-            # dictionary formation
-            dct[n] = lang
-            # to prevent endless loop
+            dct[counter] = lang
             M -= 1
-        # to prevent endless loop
         N -= 1
-        # key increase
-        n += 1
+        counter += 1
     return dct
 
 
 def output_data(dct):
     sets = []
-    for i in dct.values():
-        sets.append(set(i))
-    # for test
-    # print(sets)
+    for lang in dct.values():
+        sets.append(set(lang))
 
     # another way of intersection sets (for test)
     # common_languages = set.intersection(*[set(contract)
     # for contract in sets])
     common_languages = set.intersection(*map(set, sets))
     # comment output
-    # print("The number of common\
-# languages: {0}".format(len(common_languages)))
+    # print("The number of common
+    # languages: {0}".format(len(common_languages)))
     # output without comment
     print(len(common_languages))
     # comment output
@@ -87,9 +80,5 @@ def output_data(dct):
     print(*at_least_one_student_knows, sep='\n')
 
 
-x = input_data()
-# for test
-# print(x)
-# for test
-# print(len(x))
-output_data(x)
+input_data = input_data()
+output_data(input_data)

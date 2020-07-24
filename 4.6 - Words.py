@@ -6,18 +6,10 @@
 Определите, сколько различных слов содержится в этом тексте.
 """
 
+
 str_ = open('ReadMe.txt', 'r', encoding='utf8')
-a = str(str_.read())
-# for test
-# print(str_.read())
-final_str = []
-# for test
-# print(set(a.split()))
-for i in set(a.split()):
-    if i.isalpha():
-        final_str.append(i)
-print(set(final_str))
-print(len(set(final_str)))
+input_text = str(str_.read())
+final_str = set(input_text.split())
+print("The input text: has {} different words"
+      .format(len(final_str)))
 str_.close()
-# for test
-# print(final_str)
