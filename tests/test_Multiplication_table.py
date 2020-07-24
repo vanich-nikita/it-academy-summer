@@ -1,12 +1,12 @@
-import unittest
 import ddt
+import unittest
 from src.Multiplication_table import multiplication_table
 
 
 @ddt.ddt
 class MultiplicationTableTests(unittest.TestCase):
     def test_multiplication_table(self):
-       self.assertEqual(multiplication_table(1, 1), 1)
+        self.assertEqual(multiplication_table(1, 1), 1)
 
     @ddt.data(
         (5, 5, 14),

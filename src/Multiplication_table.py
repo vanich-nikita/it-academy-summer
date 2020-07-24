@@ -27,9 +27,9 @@ def multiplication_table(m, n):
                     result.add(element)
             print(len(result))
     except ValueError:
-            print("ValueError input correct data!")
+        print("ValueError input correct data!")
     except TypeError:
-            print("TypeError input correct data!")
+        print("TypeError input correct data!")
     return len(result)
 
 

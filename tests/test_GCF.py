@@ -7,8 +7,8 @@
 """
 
 
-import unittest
 import ddt
+import unittest
 from src.GCF import gcf
 
 
