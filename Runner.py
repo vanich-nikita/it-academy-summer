@@ -10,22 +10,26 @@ c.	runner(‘func’, ‘func1’...) - вызывает все переданн
 import funcs
 
 
+def check_name(func_name):
+    if not func_name.startswith('__') and not func_name.endswith('__'):
+        f = getattr(funcs, func_name)
+        return f()
+
+
 def runner(*args):
-    # print(*args)
     if len(args) == 0:
         for name in dir(funcs):
-            if '__' not in name:
-                f = getattr(funcs, name)
-                f()
+            check_name(name)
     else:
-        # print(args)
         for arg in args:
             if arg in dir(funcs):
-                a = getattr(funcs, arg)
-                a()
+                check_name(arg)
+            else:
+                print("Unknown function")
 
 
 runner()
-# print(dir(funcs))
 runner('gcf')
 runner('sum', 'gcf')
+runner(__name__)
+runner(11)
