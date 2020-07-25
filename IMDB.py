@@ -67,22 +67,17 @@ try:
 
     os.remove('top250_1.txt')
 
-    # print(dct)
     # movie title dictionary
     dct_names = {}
     for number, initial_list in dct.items():
         for element in initial_list:
             dct_names[number] = initial_list[3:-1]
 
-    # print(dct_names)
-
     for number, names in dct_names.items():
         str_ = ''
         for part in names:
             str_ += part + ' '
         dct_names[number] = str_
-
-    # print(dct_names)
 
     top250_ready = open('top250_movies_ready.txt', 'a')
     for number, title in dct_names.items():
@@ -96,8 +91,6 @@ try:
         for index, element in enumerate(initial_list):
             if index == 2:
                 dct_ratings[number] = float(element)
-
-    # print(dct_ratings)
 
     # to re-execute the program
     ratings = open('ratings.txt', 'w')
@@ -122,8 +115,6 @@ try:
                 element = element.strip(')')
                 element = element.rstrip('/I')
                 dct_years[number] = element
-
-    # print(dct_years)
 
     # to re-execute the program
     years = open('years.txt', 'w')

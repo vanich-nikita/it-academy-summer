@@ -2,20 +2,20 @@
 Создайте декоратор, который хранит результаты вызовов функции
 (за все время вызовов, не только текущий запуск программы)
 """
+from datetime import datetime
 
 
-def dec(sum):
-    lst = []
+def dec(func):
 
     def wrapper(*args, **kwargs):
-        nonlocal lst
-        res = sum(*args, **kwargs)
-        lst.append(res)
-        f = open('log.txt', 'a')
-        f.write(str(lst))
+        now = datetime.now()
+        current_time = now.strftime("%D %H:%M:%S ")
+        res = func(*args, **kwargs)
+        f = open("log.txt", "a")
+        f.write(current_time + func.__name__ + " from arguments: positional"
+                " {} keyword {} is ".format(args, kwargs) + str(res) + '\n')
         f.close()
-        # print(lst)
-        return lst
+        return res
     return wrapper
 
 

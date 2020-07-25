@@ -17,11 +17,6 @@ def near_pow2(n):
         return 2 ** (pow + 1)
 
 
-# for test
-# def is_pow2(word):
-#   return word & (word - 1) == 0
-
-
 n = int(input("Enter number: "))
 x = near_pow2(n)
 print(x)

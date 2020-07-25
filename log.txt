@@ -1,0 +1,9 @@
+07/25/20 17:15:33 sum from arguments: positional (1, 5) keyword {} is 6
+07/25/20 17:15:33 sum from arguments: positional (2, 5, 6) keyword {} is 13
+07/25/20 17:15:33 sum from arguments: positional (11, 5) keyword {} is 16
+07/25/20 17:16:37 sum from arguments: positional (1, 5) keyword {} is 6
+07/25/20 17:16:37 sum from arguments: positional (2, 5, 6) keyword {} is 13
+07/25/20 17:16:37 sum from arguments: positional (11, 5) keyword {} is 16
+07/25/20 17:20:00 sum from arguments: positional (1, 5) keyword {} is 6
+07/25/20 17:20:00 sum from arguments: positional (2, 5, 6) keyword {} is 13
+07/25/20 17:20:00 sum from arguments: positional (11, 5) keyword {} is 16
