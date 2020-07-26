@@ -19,7 +19,6 @@ class GCFTests(unittest.TestCase):
 
     @ddt.data(
         (30, 18, 6),
-        (30, 18, 4),
         (39, 16, 1),
         (44, 16, 4),
         (99, 18, 9),

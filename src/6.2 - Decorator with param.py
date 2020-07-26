@@ -35,7 +35,6 @@ if __name__ == '__main__':
     @my_dec(3)
     def fun(a=0, b=0):
         return a + b
-
     fun(22, 4)
     fun(1, 4)
     fun(5, 6)

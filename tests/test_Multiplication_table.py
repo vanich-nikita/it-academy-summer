@@ -20,6 +20,7 @@ class MultiplicationTableTests(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_invalid_input(self):
+        import pdb; pdb.set_trace()
         with self.assertRaises(ValueError):
             multiplication_table(-1, -1)
 
