@@ -26,18 +26,20 @@ def multiplication_table(m, n):
                 for element in value_of_row:
                     result.add(element)
             print(len(result))
-    except ValueError:
-        print("ValueError input correct data!")
     except TypeError:
         print("TypeError input correct data!")
     return len(result)
 
 
-# if __name__ == '__main__':
-#     multiplication_table(-1, -1)
-#     multiplication_table('a', 'b')
-#     multiplication_table(1, 1)
-#     multiplication_table(3, 4)
-#     multiplication_table(64, 64)
-#     multiplication_table(12, 345)
-#     multiplication_table(64, 10**6)
+if __name__ == '__main__':
+    try:
+        multiplication_table('a', 'b')
+        multiplication_table(-1, -1)
+    except ValueError:
+        print("ValueError input correct data!")
+
+multiplication_table(1, 1)
+multiplication_table(3, 4)
+multiplication_table(64, 64)
+multiplication_table(12, 345)
+# multiplication_table(64, 10**6)

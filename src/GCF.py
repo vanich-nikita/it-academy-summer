@@ -13,8 +13,16 @@ def gcf(a, b):
             else:
                 b = b - a
         return a
+    else:
+        raise ValueError("Input positive number!")
 
 
-# if __name__ == '__main__':
-#     print(gcf(-10, -1))
-#     print(gcf('a', 'b'))
+if __name__ == '__main__':
+    try:
+        print(gcf(-10, -1))
+    except ValueError:
+        print("ValueError input correct data!")
+    try:
+        print(gcf('a', 'b'))
+    except TypeError:
+        print("TypeError input correct data!")

@@ -32,7 +32,7 @@ class GCFTests(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_invalid_input(self):
-        with self.assertRaises(TypeError):
+        with self.assertRaises(ValueError):
             gcf(-10, -1)
 
     def test_invalid_input_str(self):
