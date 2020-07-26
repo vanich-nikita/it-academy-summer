@@ -60,11 +60,11 @@ class Question:
 
     def __str__(self):
         """Выводит вопросы"""
-        result = self.get_question() + '\n' + \
-                 '1. ' + self.get_answer1() + '\n' + \
-                 '2. ' + self.get_answer2() + '\n' + \
-                 '3. ' + self.get_answer3() + '\n' + \
-                 '4. ' + self.get_answer4()
+        result = self.get_question() + '\n ' \
+                                       '1. ' + self.get_answer1() + '\n ' \
+                                       '2. ' + self.get_answer2() + '\n' + \
+                                       '3. ' + self.get_answer3() + '\n' + \
+                                       '4. ' + self.get_answer4()
         return result
 
     def isCorrect(self, answer):
