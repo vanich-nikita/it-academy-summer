@@ -6,8 +6,9 @@
 все возможные ситуации сама.
 """
 
-from src.GCF import gcf
+
 import ddt
+from src.GCF import gcf
 import unittest
 
 

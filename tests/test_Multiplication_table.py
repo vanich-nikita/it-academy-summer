@@ -1,6 +1,6 @@
 import ddt
-import unittest
 from src.Multiplication_table import multiplication_table
+import unittest
 
 
 @ddt.ddt
