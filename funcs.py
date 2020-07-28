@@ -14,5 +14,9 @@ def sum(*b):
     print(sum)
 
 
+g = 100
+h = 101
+
+
 if __name__ == '__main__':
     gcf(99, 66)

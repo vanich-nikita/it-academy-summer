@@ -13,7 +13,10 @@ import funcs
 def check_name(func_name):
     if not func_name.startswith('__') and not func_name.endswith('__'):
         f = getattr(funcs, func_name)
-        return f()
+        if callable(f):
+            return f()
+        else:
+            print("{} - this is not a function!!!".format(f))
 
 
 def runner(*args):
@@ -32,4 +35,3 @@ runner()
 runner('gcf')
 runner('sum', 'gcf')
 runner(__name__)
-runner(11)
